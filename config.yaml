@@ -1,0 +1,48 @@
+data_root: "./fatigueset"
+use_headband: true
+use_wristband: true
+use_chest: false
+use_ear: false
+resample_hz: 1
+window_seconds: 30
+stride_seconds: 15
+label_target: "mentalFatigueScore"
+classification_bins: [33.0, 66.0]
+use_markers_alignment: true
+fallback_even_segments: true
+random_seed: 42
+xgb_params_reg:
+  objective: "reg:squarederror"
+  max_depth: 6
+  eta: 0.1
+  subsample: 0.9
+  colsample_bytree: 0.9
+  nthread: -1
+  num_boost_round: 300
+xgb_params_clf:
+  objective: "multi:softprob"
+  num_class: 3
+  max_depth: 6
+  eta: 0.1
+  subsample: 0.9
+  colsample_bytree: 0.9
+  nthread: -1
+  num_boost_round: 300
+out_dir: "./outputs"
+temporal_train_ratio: 0.7
+do_loso: true
+
+# --- Label alignment ---
+use_task_blocks: true           # try to segment by task markers if present
+task_marker_keys: ["crt", "nback", "task", "switch", "baseline", "rest"]
+
+# --- Inference + alerting ---
+smoothing:
+  ema_alpha: 0.3                # 0..1 (higher = faster)
+  persistence_k: 3              # require K consecutive high-risk windows
+  mode: "regression"            # "regression" or "classification"
+
+alerts:
+  # for regression mode (score 0-100)
+  high_threshold: 66.0
+  medium_threshold: 33.0
