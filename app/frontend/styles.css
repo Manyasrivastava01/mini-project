@@ -1,0 +1,9 @@
+body { font-family: Georgia, serif; margin: 24px; }
+h1 { font-size: 42px; margin-bottom: 8px; }
+h2 { margin-top: 28px; }
+.tip { color: #333; }
+.row { display: flex; gap: 18px; align-items: flex-start; }
+textarea { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 14px; padding: 10px; }
+.controls { display: flex; flex-direction: column; gap: 10px; }
+button { padding: 6px 14px; cursor: pointer; }
+pre { background: #f3f3f3; padding: 12px; border-radius: 6px; }

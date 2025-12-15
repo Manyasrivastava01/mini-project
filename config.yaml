@@ -44,5 +44,8 @@ smoothing:
 
 alerts:
   # for regression mode (score 0-100)
-  high_threshold: 66.0
-  medium_threshold: 33.0
+  high_threshold: 62.0
+  medium_threshold: 32.0
+  ema_alpha: 0.3        # higher = more reactive, lower = smoother
+  on_windows: 3         # High for 3 consecutive windows to turn alert ON
+  off_windows: 3        # Non-High for 3 consecutive windows to turn alert OFF
