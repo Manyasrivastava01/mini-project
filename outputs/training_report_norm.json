@@ -1,0 +1,12 @@
+{
+  "temporal_split": 0.7,
+  "reg_mae_temporal": 14.725658692302403,
+  "clf_acc_temporal": 0.4446927374301676,
+  "clf_f1_macro_temporal": 0.2850071123755334,
+  "clf_LOSO_acc_mean": 0.5728587357357355,
+  "clf_LOSO_f1_macro_mean": 0.3443257278952814,
+  "clf_LOSO_acc_std": 0.23551162704636017,
+  "clf_LOSO_f1_macro_std": 0.16176246366298905,
+  "reg_LOSO_mae_mean": 16.620497525763962,
+  "reg_LOSO_mae_std": 5.998921610204728
+}

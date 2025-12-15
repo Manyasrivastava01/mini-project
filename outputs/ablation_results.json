@@ -1,0 +1,35 @@
+{
+  "EEG_only": {
+    "reg_mae_temporal": 14.432727335007522,
+    "clf_acc_temporal": 0.5564245810055866,
+    "clf_f1_macro_temporal": 0.45781204210905974,
+    "reg_mae_loso_mean": 16.459207323880754,
+    "reg_mae_loso_std": 5.520321343339443,
+    "clf_acc_loso_mean": 0.6145976824120571,
+    "clf_acc_loso_std": 0.2289292355844576,
+    "clf_f1_macro_loso_mean": 0.36430906290549664,
+    "clf_f1_macro_loso_std": 0.12270493073494863
+  },
+  "Wrist_only": {
+    "reg_mae_temporal": 18.405900965387648,
+    "clf_acc_temporal": 0.4402234636871508,
+    "clf_f1_macro_temporal": 0.24317371661413,
+    "reg_mae_loso_mean": 19.727528944086274,
+    "reg_mae_loso_std": 6.64798977306827,
+    "clf_acc_loso_mean": 0.5133007193417751,
+    "clf_acc_loso_std": 0.1610746013596181,
+    "clf_f1_macro_loso_mean": 0.27210259592442587,
+    "clf_f1_macro_loso_std": 0.08024615179061144
+  },
+  "Combined": {
+    "reg_mae_temporal": 17.17677807593842,
+    "clf_acc_temporal": 0.5027932960893855,
+    "clf_f1_macro_temporal": 0.3481533627349935,
+    "reg_mae_loso_mean": 16.956358771474346,
+    "reg_mae_loso_std": 5.501824071871924,
+    "clf_acc_loso_mean": 0.5603628169542062,
+    "clf_acc_loso_std": 0.22549824881535846,
+    "clf_f1_macro_loso_mean": 0.33067589718387785,
+    "clf_f1_macro_loso_std": 0.1267063306758833
+  }
+}
