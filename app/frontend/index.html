@@ -1,37 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Fatigue Predictor + Causal Explanation (Demo)</title>
-  <link rel="stylesheet" href="/static/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatigue Predictor Demo</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <h1>Fatigue Predictor + Causal Explanation (Demo)</h1>
 
-  <h2>Paste a JSON feature object</h2>
-  <p class="tip">
-    Tip: copy one row from <code>outputs/features_all.csv</code> and convert to JSON key:value pairs.
-  </p>
-
   <div class="row">
-    <textarea id="jsonBox" rows="14" cols="45">{
+    <div class="col">
+      <h2>Paste a JSON feature object</h2>
+      <p class="tip">
+        Tip: click <b>Load sample row</b> to auto-fill from outputs/features_all.csv (or normalized).
+      </p>
+
+      <div class="controls">
+        <button id="btnSample">Load sample row</button>
+        <label class="checkbox">
+          <input type="checkbox" id="applyNorm" checked />
+          Apply normalization (recommended)
+        </label>
+      </div>
+
+      <textarea id="inputJson" spellcheck="false">{
   "hr_mean": 80.2,
   "eda_mean": 0.21,
   "temp_mean": 34.1
 }</textarea>
 
-    <div class="controls">
-      <label>
-        <input id="applyNorm" type="checkbox" checked />
-        Apply normalization (recommended)
-      </label>
-      <button id="btnPredict">Predict</button>
+      <button id="btnPredict" class="primary">Predict</button>
+    </div>
+
+    <div class="col">
+      <h2>Output</h2>
+      <pre id="output">{}</pre>
     </div>
   </div>
 
-  <h2>Output</h2>
-  <pre id="out">{}</pre>
-
-  <script src="/static/app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

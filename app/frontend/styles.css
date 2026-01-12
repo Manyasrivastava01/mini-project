@@ -1,9 +1,76 @@
-body { font-family: Georgia, serif; margin: 24px; }
-h1 { font-size: 42px; margin-bottom: 8px; }
-h2 { margin-top: 28px; }
-.tip { color: #333; }
-.row { display: flex; gap: 18px; align-items: flex-start; }
-textarea { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 14px; padding: 10px; }
-.controls { display: flex; flex-direction: column; gap: 10px; }
-button { padding: 6px 14px; cursor: pointer; }
-pre { background: #f3f3f3; padding: 12px; border-radius: 6px; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 24px;
+  color: #111;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.col {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.tip {
+  margin-top: 0;
+  color: #444;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+textarea {
+  width: 100%;
+  height: 340px;
+  padding: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  background: #f6f6f6;
+}
+
+button.primary {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+pre {
+  background: #f6f6f6;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  overflow: auto;
+  max-height: 520px;
+}
