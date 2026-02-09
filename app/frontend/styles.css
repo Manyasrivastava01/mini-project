@@ -74,3 +74,97 @@ pre {
   overflow: auto;
   max-height: 520px;
 }
+
+
+.human-output {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.score-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.score {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.score-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section {
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.muted {
+  color: #444;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.bullets {
+  margin: 8px 0 0 20px;
+}
+
+.pill {
+  display: inline-block;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 12px;
+  border: 1px solid #333;
+}
+
+.pill-low {
+  background: #e8f6ee;
+}
+
+.pill-medium {
+  background: #fff7e6;
+}
+
+.pill-high {
+  background: #fdecec;
+}
+
+.evidence {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #333;
+}
+
+.disclaimer {
+  margin-top: 6px;
+}
+
+.debug {
+  margin-top: 14px;
+}
+
+.error {
+  padding: 10px 12px;
+  border: 1px solid #f1c2c2;
+  border-radius: 10px;
+  background: #fdecec;
+}

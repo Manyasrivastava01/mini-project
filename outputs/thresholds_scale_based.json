@@ -1,0 +1,8 @@
+{
+  "mode": "scale_based",
+  "description": "Scale-based risk bands on a 0-100 mental fatigue score: Low < 33, Medium >= 33 and < 67, High >= 67. This avoids tuned thresholds where the High class may have zero support.",
+  "thresholds": {
+    "medium_threshold": 33.0,
+    "high_threshold": 67.0
+  }
+}
